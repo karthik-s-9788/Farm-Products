@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/farmerProfile.css">
+    <link rel="icon" href="../images/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+    </style>
+    <title>Farm Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/icons/logo.svg" alt="">
+            <nav>
+                <a href="../index.html" class="nav-span">
+                    <span class="material-icons-outlined" id="home-icon">
+                        home
+                    </span>
+                </a>
+                <a href="farmerHome.html" class="nav-span">
+                    <span class="material-icons-outlined" id="farmer-icon">
+                        spa
+                    </span>
+                </a>
+                <a href="#" class="nav-span">
+                    <span class="material-icons" id="face-icon">
+                        face
+                    </span>
+                </a>
+            </nav>
+        </div>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image-name">
+                    <div class="profile-image">
+                        <img src="../images/profiles/img1.png" alt="">
+                    </div>
+                    <div class="profile-name">
+                        <h2>Karthik</h2>
+                    </div>
+                </div>
+                <div class="profile-place-number">
+                    <div class="place">
+                        <span class="material-icons-outlined">
+                            place
+                        </span>
+                        <h5>Hosur</h5>
+                    </div>
+                    <div class="number">
+                        <span class="material-icons-outlined">
+                            call
+                        </span>
+                        <h5>7339113038</h5>
+                    </div>
+                </div>
+                <div class="profile-buttons">
+                    <button class="edit-profile" onclick="window.location.href='../html/farmerEditProfile.html'">Edit Profile</button>
+                    <button class="cancel" onclick="window.location.href='../html/farmerHome.html'">Cancel</button>
+                    <button class="logout" onclick="window.location.href='../index.html'">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div>

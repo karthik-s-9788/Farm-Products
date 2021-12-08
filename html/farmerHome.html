@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/farmerHome.css">
+    <link rel="icon" href="../images/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+    </style>
+    <title>Farm Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/icons/logo.svg" alt="">
+            <nav>
+                <a href="../index.html" class="nav-span">
+                    <span class="material-icons-outlined" id="home-icon">
+                        home
+                    </span>
+                </a>
+                <a href="#" class="nav-span">
+                    <span class="material-icons" id="farmer-icon">
+                        spa
+                    </span>
+                </a>
+                <a href="../html/farmerProfile.html" class="nav-span">
+                    <span class="material-icons-outlined" id="face-icon">
+                        face
+                    </span>
+                </a>
+            </nav>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <form action="#">
+                    <span class="material-icons-outlined">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search for a product.." name="search"
+                    autocomplete="off">
+                </form>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="products">
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/onion.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Onions</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹29/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹29.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/mango.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Mangoes</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹70/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹70.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/carrot.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Carrots</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹50/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹50.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/graphes.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Grapes</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹80/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹80.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/gauva.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Guava</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹68/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹68.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/orange.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Onions</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹60/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹60.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/tomato.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Tomatoes</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹40/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹40.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/raddish.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Radishes</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹12/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹12.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/banana.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Bananas</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹65/kg</h4>
+                        <h4>Stock-50kg</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹65.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/coriander.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Coriander</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹20/bunch</h4>
+                        <h4>Stock-50bunch</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹20.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                <div class="product">
+                    <span class="material-icons-outlined">
+                        close
+                    </span>
+                    <div class="product-image">
+                        <img src="../images/products/coconut.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Coconuts</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>₹30/piece</h4>
+                        <h4>Stock-50pieces</h4>
+                    </div>
+                    <div class="product-price">
+                        <h1>₹30.00</h1>
+                    </div>
+                    <div class="edit-product" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            edit
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="add-products">
+                    <div class="add-products-wrapper" onclick="togglePopup()">
+                        <span class="material-icons-outlined">
+                            add_circle_outline
+                        </span>
+                        <p class=add-products-title>
+                            Add product
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <span class="material-icons-outlined" id="close"
+                onclick="togglePopup()">
+                    close
+                </span>
+                <div class="profile-image-buttons">
+                    <div class="profile-image">
+                        <img src="../images/profile.png" alt="">
+                    </div>
+                    <div class="profile-buttons">
+                        <button class="upload-picture" onclick="window.location.href='#'">Upload picture</button>
+                        <button class="delete" onclick="window.location.href='#'">Delete</button>
+                    </div>
+                </div>
+                <div class="profile-phone-place">
+                    <div class="input-container" id="name">
+                        <span class="material-icons-outlined">
+                            title
+                        </span>
+                        <input type="text" id="input_phone_ca" placeholder="Ex-Carrot,Tomato" class="input-field" autocomplete="off">
+                    </div>
+                    <div class="input-container" id="weight">
+                        <span class="material-icons-outlined">
+                            monitor_weight
+                        </span>
+                        <input type="text" id="input_location_ca" placeholder="Ex-₹10/kg" class="input-field" autocomplete="off">
+                    </div>
+                    <div class="input-container" id="stock">
+                        <span class="material-icons-outlined">
+                            production_quantity_limits
+                        </span>
+                        <input type="text" id="input_location_ca" placeholder="Ex-50/kg" class="input-field" autocomplete="off">
+                    </div>
+                    <div class="input-container" id="price">
+                        <span class="material-icons-outlined">
+                            ₹
+                        </span>
+                        <input type="text" id="input_location_ca" placeholder="Ex-₹20.00" class="input-field" autocomplete="off">
+                    </div>
+                </div>
+                <div class="profile-cancel-save">
+                    <button class="cancel" onclick="togglePopup()">Cancel</button>
+                    <button class="save" onclick="window.location.href='#'">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/farmerHome.js"></script>

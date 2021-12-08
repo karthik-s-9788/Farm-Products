@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/farmerEditProfile.css">
+    <link rel="icon" href="../images/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+    </style>
+    <title>Farm Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/icons/logo.svg" alt="">
+            <nav>
+                <a href="../index.html" class="nav-span">
+                    <span class="material-icons-outlined" id="home-icon">
+                        home
+                    </span>
+                </a>
+                <a href="farmerHome.html" class="nav-span">
+                    <span class="material-icons-outlined" id="farmer-icon">
+                        spa
+                    </span>
+                </a>
+                <a href="#" class="nav-span">
+                    <span class="material-icons" id="face-icon">
+                        face
+                    </span>
+                </a>
+            </nav>
+        </div>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image-buttons">
+                    <div class="profile-image">
+                        <img src="../images/profiles/img1.png" alt="">
+                    </div>
+                    <div class="profile-buttons">
+                        <button class="upload-picture" onclick="window.location.href='#'">Upload picture</button>
+                        <button class="delete" onclick="window.location.href='#'">Delete</button>
+                    </div>
+                </div>
+                <div class="profile-phone-place">
+                    <div class="input-container" id="phone">
+                        <span class="material-icons-outlined">
+                            phones
+                        </span>
+                        <input type="tel" id="input_phone_ca" placeholder="Phone" class="input-field" autocomplete="off">
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons-outlined">
+                            place
+                        </span>
+                        <input type="text" id="input_location_ca" placeholder="Location" class="input-field" autocomplete="off">
+                    </div>
+                </div>
+                <div class="profile-cancel-save">
+                    <button class="cancel" onclick="window.location.href='../html/farmerProfile.html'">Cancel</button>
+                    <button class="save" onclick="window.location.href='#'">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>

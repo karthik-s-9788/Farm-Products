@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/customer.css">
+    <link rel="icon" href="../images/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+    </style>
+    <title>Farm Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/icons/logo.svg" alt="">
+            <nav>
+                <a href="../index.html" class="nav-span">
+                    <span class="material-icons-outlined"
+                    id="home-icon" href="./">
+                    home
+                    </span>
+                </a>
+                <a href="../html/farmer.html" class="nav-span">
+                    <span class="material-icons-outlined"
+                    id="farmer-icon" href="./">
+                        spa
+                    </span>
+                </a>
+                <a href="../html/customer.html" class="nav-span">
+                    <span class="material-icons"
+                    id="customer-icon" href="./">
+                        person
+                    </span>
+                </a>
+            </nav>
+        </div>
+        <div class="sub-container">
+            <div class="left-div">
+                <div class="title">
+                    <h1 class="title-1">Farm</h1>
+                    <h1 class="title-2">Products</h1>
+                </div>
+                <img src="../images/photo.png" alt="">
+            </div>
+            <div class="right-div">
+                <div class="login-div">
+
+                    <!---login form--->
+
+                    <form class="form" id="login" onsubmit=" return LoginValidation()" action="../html/customerHome.html" method="get" autocomplete="off">
+                        <h1 class="login-form">Login as customer,</h1>
+                        <div class="error-div-login" id="error-div-login">
+                            <p id="error-message-login"></p>
+                        </div>
+                        <div class="input-container">
+                            <span class="material-icons-outlined">
+                                person_outline
+                            </span>
+                            <input type="username" id="input_username" placeholder="Username" class="input-field">
+                        </div>
+                        <div class="input-container">
+                            <span class="material-icons-outlined">
+                                lock
+                            </span>
+                            <span class="material-icons-outlined visibility_on" id="visibility_on" onclick="input_password()">
+                                visibility_off
+                            </span>
+                            <span class="material-icons-outlined visibility_off" id="visibility_off" onclick="input_password()">
+                                visibility
+                            </span>
+                            <input type="password" id="input_password" placeholder="Password" class="input-field">
+                        </div>
+                        <button class="button" type"submit">Sign in</button>
+                        <p class="form-text">Don't have an account?
+                            <a href="./" class="form-link" id="linkCreateAccount"> Register here</a>
+                        </p>
+                    </form>
+
+                    <!---signup--->
+
+                    <form class="form form-hidden" onsubmit=" return validation()" id="createAccount"
+                    action="../html/customerHome.html" method="get" autocomplete="off">
+                        <h1 class="login-form">Create customer account,</h1>
+                        <div class="error-div-ca" id="error-div-ca">
+                            <p id="error-message-ca"></p>
+                        </div>
+                        <div class="input-container">
+                            <span class="material-icons-outlined">
+                                person_outline
+                            </span>
+                            <input type="username" id="input_username_ca" placeholder="Username" class="input-field">
+                        </div>
+                        <div class="input-container">
+                            <span class="material-icons-outlined">
+                                lock
+                            </span>
+                            <span class="material-icons-outlined visibility_on_password_ca" id="visibility_on_password_ca"
+                                onclick="input_password_ca()">
+                                visibility_off
+                            </span>
+                            <span class="material-icons-outlined visibility_off_password_ca" id="visibility_off_password_ca"
+                                onclick="input_password_ca()">
+                                visibility
+                            </span>
+                            <input type="password" id="input_password_ca" placeholder="Password" class="input-field">
+                        </div>
+                        <div class="input-container">
+                            <span class="material-icons-outlined">
+                                lock
+                            </span>
+                            <span class="material-icons-outlined visibility_on_confirm_password_ca" id="visibility_on_confirm_password_ca"
+                                onclick="input_confirm_password_ca()">
+                                visibility_off
+                            </span>
+                            <span class="material-icons-outlined visibility_off_confirm_password_ca" id="visibility_off_confirm_password_ca"
+                                onclick="input_confirm_password_ca()">
+                                visibility
+                            </span>
+                            <input type="password" id="input_confirm_password_ca" placeholder="Confirm password" class="input-field">
+                        </div>                   
+                        <button class="button" type"submit">Create account</button>
+                        <p class="form-text">Already have an account?
+                            <a href="./" class="form-link" id="linkLogin"> Login here</a>
+                        </p>
+                    </form>
+
+                    <!------->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script src="../js/customer.js"></script>
+
+</html>

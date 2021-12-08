@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/customerHome.css">
+    <link rel="icon" href="../images/icons/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined|Material+Icons">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+    </style>
+    <title>Farm Products</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/icons/logo.svg" alt="">
+            <nav>
+                <a href="../index.html" class="nav-span">
+                    <span class="material-icons-outlined" id="home-icon">
+                        home
+                    </span>
+                </a>
+                <a href="#" class="nav-span">
+                    <span class="material-icons" id="farmer-icon">
+                        person
+                    </span>
+                </a>
+                <a href="../html/customerProfile.html" class="nav-span">
+                    <span class="material-icons-outlined" id="face-icon">
+                        face
+                    </span>
+                </a>
+            </nav>
+        </div>
+        <div class="search-container">
+            <div class="search">
+                <form action="#">
+                    <span class="material-icons-outlined">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search for a place to find farmers.." name="search" autocomplete="off">
+                </form>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="products">
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img1.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Karthik</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Hosur</h4>
+                        <h4>7339113038</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img2.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Thinhesh</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Eddapadi</h4>
+                        <h4>8825581324</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img3.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Logesh</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Dharmapuri</h4>
+                        <h4>8610617935</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img4.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Deva</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Krishnagiri</h4>
+                        <h4>6385824029</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img5.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Jagan</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Thanjavur</h4>
+                        <h4>9361475692</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+                <div class="product" onclick="togglePopup()">
+                    <div class="product-image">
+                        <img src="../images/profiles/img6.png" alt="">
+                    </div>
+                    <div class="product-title">
+                        <h1>Seetha</h1>
+                    </div>
+                    <div class="product-sub-title">
+                        <h4>Krishnagiri</h4>
+                        <h4>9361476945</h4>
+                    </div>
+                    <div class="edit-product">
+                        <span class="material-icons-outlined">
+                            open_in_full
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+                <span class="material-icons-outlined" id="close" onclick="togglePopup()">
+                    close
+                </span>
+                <div class="views-container">
+                    <div class="views">
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/onion.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Onions</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹29/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹29.00</h1>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/mango.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Mangoes</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹70/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹70.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/carrot.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Carrots</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹50/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹50.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/graphes.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Grapes</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹80/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹80.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/gauva.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Guava</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹68/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹68.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/orange.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Onions</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹60/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹60.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/tomato.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Tomatoes</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹40/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹40.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/raddish.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Radishes</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹12/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹12.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/banana.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Bananas</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹65/kg</h4>
+                                <h4>Stock-50kg</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹65.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/coriander.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Coriander</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹20/bunch</h4>
+                                <h4>Stock-50bunch</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹20.00</h1>
+                            </div>
+                            
+                        </div>
+                        <div class="view">
+                            <div class="view-image">
+                                <img src="../images/products/coconut.png" alt="">
+                            </div>
+                            <div class="view-title">
+                                <h1>Coconuts</h1>
+                            </div>
+                            <div class="view-sub-title">
+                                <h4>₹30/piece</h4>
+                                <h4>Stock-50pieces</h4>
+                            </div>
+                            <div class="view-price">
+                                <h1>₹30.00</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../js/customerHome.js"></script>
